@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Home | Portfolio</title>
+</head>
+
+
+<body id="home-page-bg">
+    <h1 class="hidden">Home Page</h1>
+
+<!-------------------------- header ------------------------------->
+
+    <header class="grid-con">
+        <h2 class="hidden">Header</h2>
+
+        <nav id="hamburger-menu" class="grid-con">
+            <div class="col-start-4 col-end-5 m-col-start-12 m-col-end-13 l-col-start-12 l-col-end-13 xl-col-start-12 xl-col-end-13 box-right">
+                <i id="hamburger-close" class="fa-solid fa-x"></i>
+            </div>
+
+            <div class="col-span-4 m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-9 box-center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-start-1 col-end-4 m-col-start-2 m-col-end-5 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
+            <h3 class="hidden">Logo</h3>
+            <a href="index.html"><img class="logo" src="images/" alt="logo"></a>
+        </div>
+
+        <nav class="mobile col-start-4 box-right">
+            <h3 class="hidden">Mobile Nav</h3>
+            <i id="hamburger-open" class="fa-solid fa-bars"></i>
+        </nav>
+
+        <nav class="tablet m-col-start-5 m-col-end-12 box-right main-nav">
+            <h3 class="hidden">Tablet Nav</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+
+        <nav class="desktop l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right main-nav">
+            <h3 class="hidden">Desktop Nav</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+
+
+<!-------------------------- hero ------------------------------->
+
+<section class="grid-con">
+
+<div class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 box-left">
+    <h3 class="hidden">Hero Text</h3>
+    <p>"Hello there! Thank you for reaching out to me. I'm thrilled to connect with you! Whether you have questions, collaboration ideas, or simply want to say hello, I'd love to hear from you. 
+
+        <br> Fill in the details below, and let's start a conversation. Looking forward to chatting soon!"</p>
+</div>
+
+</section>
+
+<!-------------------------- contact form ------------------------------->
+
+<section class="grid-con">
+
+    <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+        <h3 class="hidden">Hero Image</h3>
+        <img class="hero-img" src="images/hero-img.jpg" alt="hero image">
+    </div>
+
+    <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">    
+        <h3 class="hidden">Contact Form</h3>
+        <form action="contact.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <label for="Location">Location</label>
+            <input type="text" name="location" id="location" placeholder="Your location" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+</section>
+
+</body>
+
+</html>
+
