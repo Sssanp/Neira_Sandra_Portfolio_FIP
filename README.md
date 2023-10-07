@@ -1,7 +1,7 @@
 # Neira_Sandra_Portfolio_FIP
-TODO: Write a project description
+This is my designer Portfolio, here there will be some projects displayed and their description.
 ## Installation
-No installation required. Download the files to your desktop.
+No installation is required. Download the files to your desktop.
 ## Usage
 Open index.html in your browser choice.
 ## Contributing
