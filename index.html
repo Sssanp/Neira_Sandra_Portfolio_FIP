@@ -1,13 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandra Portfolio</title>
-    <link href="css/grid.css"   rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Home | Portfolio</title>
 </head>
-<body>
-    <h1>Coming Soon!</h1>
+
+<!-------------------------- body ------------------------------->
+
+<body id="home-page-bg">
+    <h1 class="hidden">Home Page</h1>
+
+<!-------------------------- header ------------------------------->
+
+    <header class="grid-con">
+        <h2 class="hidden">Header</h2>
+        <nav id="hamburger-menu" class="grid-con">
+            <div class="col-start-4 col-end-5 m-col-start-12 m-col-end-13 l-col-start-12 l-col-end-13 xl-col-start-12 xl-col-end-13 box-right">
+                <i id="hamburger-close" class="fa-solid fa-x"></i>
+            </div>
+
+            <div class="col-span-4 m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-9 box-center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-start-1 col-end-4 m-col-start-2 m-col-end-5 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
+            <h3 class="hidden">Logo</h3>
+            <a href="index.html"><img class="logo" src="images/" alt="logo"></a>
+        </div>
+
+        <nav class="mobile col-start-4 box-right">
+            <h3 class="hidden">Mobile Nav</h3>
+            <i id="hamburger-open" class="fa-solid fa-bars"></i>
+        </nav>
+
+        <nav class="tablet m-col-start-5 m-col-end-12 box-right main-nav">
+            <h3 class="hidden">Tablet Nav</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+
+        <nav class="desktop l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right main-nav">
+            <h3 class="hidden">Desktop Nav</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+
+
+<!-------------------------- hero ------------------------------->
+
+        <section class="grid-con">
+            <h2 class="hidden">Hero</h2>
+    
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">Hero Image</h3>
+                <img class="hero-img" src="images/hero-img.jpg" alt="hero image">
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
+                <h3 class="hidden">Hero Text</h3>
+                <h2 class="hero-text">Hi, I'm <span class="highlight">Sandra</span></h2>
+                <h3 class="hero-text">I'm a <span class="highlight">Designer</span></h3>
+            </div>
+        </section>
+
+        <hr class="col-start-2 col-end-4 m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 spacer">
+
+        <!-------------------------- projects ------------------------------->
+
+        <section class="grid-con">
+            <h2 class="hidden">Projects</h2>
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">Project 1</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project 1 image">
+                <h2>Project Title</h2>
+                <h3>Subtitle</h3>
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
+                <h3 class="hidden">Project 2</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project 2 image">
+                <h2>Project Title</h2>
+                <h3>Subtitle</h3>
+            </div>
+
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">Project 3</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project 3 image">
+                <h2>Project Title</h2>
+                <h3>Subtitle</h3>
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
+                <h3 class="hidden">Project 4</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project 4 image">
+                <h2>Project Title</h2>
+                <h3>Subtitle</h3>
+            </div>
+
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">Project 5</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project 5 image">
+                <h2>Project Title</h2>
+                <h3>Subtitle</h3>
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
+                <h3 class="hidden">Project 6</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project 6 image">
+                <h2>Project Title</h2>
+                <h3>Subtitle</h3>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+
+        <footer class="grid-con">
+            <h2 class="hidden">Footer</h2>
+    
+            <nav class="mobile col-span-full box-center footer-nav">
+                <h3 class="hidden">Footer Nav</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="tablet m-col-start-2 m-col-end-6 box-left footer-nav">
+                <h3 class="hidden">Footer Nav</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="desktop l-col-start-2 l-col-end-6 xl-col-start-2 xl-col-start-7 box-left footer-nav">
+                <h3 class="hidden">Footer Nav</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="mobile col-span-full box-center">
+                <h3 class="hidden">Logo</h3>
+                <img class="logo" src="images/" alt="logo"><br>
+            </div>
+
+            <div class="tablet m-col-start-8 m-col-end-12 box-right">
+                <h3 class="hidden">Logo</h3>
+                <img class="logo" src="images/" alt="logo"><br>
+            </div>
+
+            <div class="desktop l-col-start-9 l-col-end-12 xl-col-start-9 xl-col-end-12 box-right">
+                <h3 class="hidden">Logo</h3>
+                <img class="logo" src="images/" alt="logo"><br>
+            </div>
+
+
+            <div class="mobile col-span-full box-center socials">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="tablet m-col-start-2 m-col-end-6 box-left socials">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="desktop l-col-start-2 l-col-end-6 xl-col-start-2 xl-col-end-6 box-left socials">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+                </ul>
+            </div>
+
+            <!--copyright-->
+
+            <div class="mobile col-span-full box-center">
+                <p>All content copyright Sandra Neira 2023 &copy;</p>
+            </div>
+
+            <div class="tablet m-col-span-full box-center">
+                <p>All content Sandra Neira 2023 &copy;</p>
+            </div>
+
+            <div class="desktop l-col-span-full xl-col-span-full box-center">
+                <p>All content Sandra Neira 2023 &copy;</p>
+            </div>
+
+
+
+        </footer>
+   
+    <script src="https://kit.fontawesome.com/0eab0f8aa6.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
