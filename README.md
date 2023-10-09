@@ -14,7 +14,7 @@ Open index.html in your browser choice.
 >The idea behind this portfolio is to create an organized and visually striking page, that stands out for its cool colours and animations, that is why for this concept I chose black as the background colour, it is going to have a very galactic or space style, I was thinking in creating a more striking background but I want my work to be what visually attracts the most attention. For now, everything is subject to change...
 ## Relevant links for My Research & Inspiration
   > * [Pinterest Board](https://co.pinterest.com/ssan3np/portfolio-ideas/)
-  Example of portfolios:
+## Example of portfolios:
   > * [Elizabeth Stiles](https://www.elizabethstiles.co.uk/)
   > * [David Milan](https://www.davidmilan.com/)
   > * [Sophie Brittain](https://www.sophiebritt.com/)
