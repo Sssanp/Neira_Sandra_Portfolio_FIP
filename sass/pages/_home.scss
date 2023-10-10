@@ -1,0 +1,19 @@
+#home-page-bg {
+    background-color: #040307;
+    color: black;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 140%
+}
+
+@media screen and (max-width: 1199px) {
+    #home-page-bg {
+        background-size: 190%
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #home-page-bg {
+        background-size: 200%
+    }
+}

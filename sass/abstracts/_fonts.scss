@@ -1,0 +1,3 @@
+@use 'mixins' as m;
+
+@include m.fontFace(cantarellregular, "../fonts/cantarell_regular-webfont");
