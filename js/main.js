@@ -38,3 +38,24 @@ hamburgerOpenIcon.addEventListener("click", openHamburgerMenu);
 hamburgerCloseIcon.addEventListener("click", closeHamburgerMenu);
 
 
+
+// GSAP Animations
+(() => {
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+
+    const navLinks = document.querySelectorAll("#main-nav nav ul li a");
+
+    function scrollLink(e) {
+        e.preventDefault();
+        console.log(e.currentTarget.hash);
+        let selectedLink = e.currentTarget.hash;
+        gsap.to(window, { duration: 1, scrollTo: { y: `${selectedLink}`, offsetY: 100 } });
+    }
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", scrollLink);
+    });
+
+})();
