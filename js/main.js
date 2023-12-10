@@ -1,5 +1,7 @@
 //Variables
 
+const player = new Plyr('video');
+
 const header = document.querySelector("header");
 
 const hamburgerOpenIcon = document.querySelector("#hamburger-open"),

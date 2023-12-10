@@ -1,9 +1,3 @@
-@font-face {
-  font-family: cantarellregular;
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/cantarell_regular-webfont.woff") format("woff"), url("../fonts/cantarell_regular-webfont.woff2") format("woff2");
-}
 body {
   margin: 0;
   padding: 0;
