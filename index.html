@@ -21,14 +21,14 @@
 
 <!-- 3d element: not sure how this work but is just for the 3d element, i want it to upload it fast so i put it first, i think this 3d is provissional i wnat to later put something more cool-->
 
- <script defer src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
- <script type="importmap">
-   {
-     "imports": {
-       "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.516/build/runtime.js"
-     }
-   }
- </script>
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+<script type="importmap">
+  {
+    "imports": {
+      "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.521/build/runtime.js"
+    }
+  }
+</script>
 </head>
 <!-- gsap library -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -128,7 +128,7 @@
 <div class="grid-con" id="projects">
     <section class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center" id="player-container">
     <video controls poster="images/reelplaceholder.png">
-        <source src="videos/Neira_Sandra_demoreel.mp4" type="video/mp4">
+        <source src="videos/Neira_Sandra_demoreelcompress2.mov" type="video/mp4">
     </video>
 </section>
 </div>
@@ -394,7 +394,7 @@
 
         <section class="grid-con">
         <h2 class="hidden">project text</h2>
-            <div class="col-start-1 col-end-5 m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 xl-col-start-4 xl-col-end-10 box-left">
+            <div class="col-start-1 col-end-5 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box-left">
                 <h3>Outcome</h3>
                 <p>It was a really exciting and fun project for me, it involved a lot of research and detailed interaction work. Still, I learned some important takeaways from this project related to design and group work.</p>
                 <br>
@@ -840,8 +840,11 @@
   
   
   </footer>
+  <!----------------------END FOOTER----------------------->
 
-  
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/main.js"></script>
 
 
 </body>

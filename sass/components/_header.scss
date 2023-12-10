@@ -1,12 +1,14 @@
 @use '../abstracts' as a;
 
+//header styles
+
 header .logo {
     width: 100%;
 }
 
 .sticky-header {
     position: sticky;
-    background-color: white;
+    background-color: a.$white-text-color;
     z-index: 10;
     top: 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -14,8 +16,7 @@ header .logo {
 
 #hamburger-menu {
     visibility: hidden;
-    background-color: #100F0F;
-    background-color: #100F0F;
+    background-color: a.$accent-color;
     color: white;
     position: fixed;
     z-index: 1;
@@ -45,7 +46,7 @@ header .logo {
 #hamburger-open:hover,
 #hamburger-close:hover {
     cursor: pointer;
-    color: pink;
+    color: a.$primary-color;
 }
 
 .main-nav {
@@ -67,7 +68,7 @@ header .logo {
 
 /*change color of the text*/
 .box-center ul li:hover {
-    color: pink;
+    color: a.$primary-color;
 }
 
 

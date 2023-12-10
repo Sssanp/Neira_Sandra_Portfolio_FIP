@@ -11,6 +11,7 @@
  */
 
 
+
 /* 1. ---General Grid Styles--- */
 
 html {
@@ -760,4 +761,18 @@ html {
   .desktop {
     display: block;
   }
+}
+
+
+/* Path: css/plyr.css */
+
+:root {
+  --plyr-color-main: #2900D4;
+  --plyr-control-icon-size: 15px;
+  --plyr-control-radius: 20px;
+  --plyr-font-family: "LEMONMILK-Regular", arial, sans-serif;
+  --plyr-control-spacing: 15px;
+  --plyr-control-hover-opacity: 0.8;
+
+
 }
