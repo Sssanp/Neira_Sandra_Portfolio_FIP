@@ -6,7 +6,7 @@ header .logo {
 
 .sticky-header {
     position: sticky;
-    background-color: #100F0F;
+    background-color: white;
     z-index: 10;
     top: 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -15,7 +15,7 @@ header .logo {
 #hamburger-menu {
     visibility: hidden;
     background-color: #100F0F;
-    background-image: linear-gradient(pink, #100F0F);
+    background-color: #100F0F;
     color: white;
     position: fixed;
     z-index: 1;
@@ -83,4 +83,12 @@ header .logo {
         margin-right: 30px;
         font-size: 18px;
     }
+
+}
+
+a {
+    text-decoration: none;
+    color: #2900D4;
+    font-family: 'LEMONMILK-Regular';
+    font-size: 16px;
 }
