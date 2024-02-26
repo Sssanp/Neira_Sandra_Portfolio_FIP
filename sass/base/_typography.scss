@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'mabry-regular-pro', sans-serif;
+    font-family: v.$body-font-family;
     color: white;
 }
 
@@ -30,7 +30,7 @@ p {
 
 .spacer {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 hr {
@@ -46,16 +46,16 @@ hr {
 }
 
 .heading {
-    font-family: 'LEMONMILK-Medium';
+    font-family: 'lemon_milkmedium';
 }
 
 .heading-alt {
-    font-family: 'LEMONMILK-Medium';
+    font-family: 'lemon_milkmedium';
     color: #171717;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     letter-spacing: 3px;
 }
 
 .sub-heading {
-    font-family: 'MabriPro-Bold';
+    font-family: 'mabry_probold';
 }

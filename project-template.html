@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Case Study layout| Portfolio</title>
+</head>
+
+
+<!------------- Now this project will be inside a lightbox------------------->
+
+<!-------------------------- body ------------------------------->
+<body id="home-page-bg">
+    <h1 class="hidden">Project 1 Page</h1>
+
+<!-------------------------- header ------------------------------->
+    <header class="grid-con">
+        <h2 class="hidden">Header</h2>
+
+        <nav id="hamburger-menu" class="grid-con">
+            <div class="col-start-4 col-end-5 m-col-start-12 m-col-end-13 l-col-start-12 l-col-end-13 xl-col-start-12 xl-col-end-13 box-right">
+                <i id="hamburger-close" class="fa-solid fa-x"></i>
+            </div>
+
+            <div class="col-span-4 m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-9 box-center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-start-1 col-end-4 m-col-start-2 m-col-end-5 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
+            <h3 class="hidden">Logo</h3>
+            <a href="index.html"><img class="logo" src="images/" alt="logo"></a>
+        </div>
+
+        <nav class="mobile col-start-4 box-right">
+            <h3 class="hidden">Mobile Nav</h3>
+            <i id="hamburger-open" class="fa-solid fa-bars"></i>
+        </nav>
+
+        <nav class="tablet m-col-start-5 m-col-end-12 box-right main-nav">
+            <h3 class="hidden">Tablet Nav</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+
+        <nav class="desktop l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right main-nav">
+            <h3 class="hidden">Desktop Nav</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+
+<!-------------------------- hero ------------------------------->
+
+        <section class="grid-con">
+            <h2 class="hidden">Hero</h2>
+    
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">Hero Text</h3>
+            <h2>Title</h2>
+            <h3>Subtitle</h3>
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
+                <h3 class="hidden">Hero paragraph</h3>
+                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
+            </div>
+        </section>
+
+        <!-------------------------- project ------------------------------->
+
+        <section class="grid-con">
+            <h2 class="hidden">main project image</h2>
+            <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center">
+                <img class="project-img" src="images/project-img.jpg" alt="project image">
+            </div>
+    
+        </section>
+
+        <section class="grid-con">
+            <h2 class="hidden">about project</h2>
+    
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">peorject description</h3>
+                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
+    
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
+                <h3 class="hidden">about project</h3>
+                <h3>My Role</h3>
+                <p>Text</p>
+                <h3>Team</h3>
+                <p>Names</p>
+            </div>
+        </section>
+
+        <section class="grid-con">
+            <h2 class="hidden">project image</h2>
+            <div class="col-start-1 col-end-5 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box-center">
+                <img class="project-img" src="images/project-img.jpg" alt="project image">
+            </div>
+
+            <h2 class="hidden">project text</h2>
+            <div class="col-start-1 col-end-5 m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 xl-col-start-4 xl-col-end-10 box-left">
+                <h3>Subtitle</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolores dicta iusto expedita? Reiciendis iste, harum quisquam aliquam sunt placeat amet necessitatibus quam? Ullam odit labore libero, excepturi incidunt nobis!</p>
+            </div>
+            
+        </section>
+
+        <section class="grid-con">
+            <h2 class="hidden">More about the porject</h2>
+    
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">image</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project image">
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
+                <h3 class="hidden">image</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project image">
+            </div>
+
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">paragraph</h3>
+                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
+                
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
+                <h3 class="hidden">paragraph</h3>
+                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
+            </div>
+
+        </section>
+
+
+
+        <section class="grid-con">
+            <h2 class="hidden">about project</h2>
+    
+            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
+                <h3 class="hidden">peorject description</h3>
+                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
+    
+            </div>
+    
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-center">
+                <h3 class="hidden">image</h3>
+                <img class="project-img" src="images/project-img.jpg" alt="project image">
+            </div>
+        </section>
+
+        
+ <!-------------------------- next project ------------------------------->
+
+  
+ <div class="next-container grid-con">
+    <a class="thumb box"  href="projects.html" previewlistener="true">
+    <h2 class="hidden">project image</h2>
+            <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-12 l-col-start-1 l-col-end-12 xl-col-start-1 xl-col-end-12 box-center">
+                <img class="next-img"  src="images/QuatroNext.jpg" alt="project image">
+            </div>
+   
+        <section class="grid-con top-text">
+        <div class="col-span-full m-col-start-3 m-col-end-7 l-col-start-5 l-col-end-9 xl-col-start-3 xl-col-end-7 box-center">
+            <h3 class="hidden">Next Project text</h3>
+            <h3>Next Project</h3>
+            <h2>Project Name</h2>
+        </div>
+    </section>
+
+</a>
+</div>
+
+<!----------------------END NEXT PROJECT----------------------->
+
+ <!----------------------FOOTER----------------------->
+
+ <footer class="grid-con spacer">
+    <h2 class="hidden">Footer</h2>
+
+    <div
+        class="col-start-1 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
+        <h3 class="hidden">Logo</h3>
+        <a href="index.html"><img class="logo" src="images/3dicon.png" alt="San Logo"></a>
+    </div>
+
+    <nav class="mobile col-span-2 box-left footer-nav">
+        <h3 class="hidden">Footer Nav</h3>
+        <p class="footer-heading">Site</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="tablet m-col-start-6 m-col-end-7 box-left footer-nav">
+        <h3 class="hidden">Footer Nav</h3>
+        <p class="footer-heading">Site</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="desktop l-col-start-7 l-col-end-8 xl-col-start-7 xl-col-start-8 box-left footer-nav">
+        <h3 class="hidden">Footer Nav</h3>
+        <p class="footer-heading">Site</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile col-span-2 box-center socials">
+        <p class="footer-heading">Socials</p>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="tablet m-col-start-9 m-col-end-12 box-left socials">
+        <p class="footer-heading">Socials</p>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="desktop l-col-start-10 l-col-end-12 xl-col-start-10 xl-col-end-12 box-left socials">
+        <p class="footer-heading">Socials</p>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
+        </ul>
+    </div>
+
+    <!--copyright-->
+
+    <div class="mobile cr col-span-full box-center">
+        <p>All content copyright Sandra Neira 2023 &copy;</p>
+    </div>
+
+    <div class="tablet cr m-col-span-full box-center">
+        <p>All content Sandra Neira 2023 &copy;</p>
+    </div>
+
+    <div class="desktop cr l-col-span-full xl-col-span-full box-center">
+        <p>All content Sandra Neira 2023 &copy;</p>
+    </div>
+
+    <hr
+        class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 spacer">
+
+
+</footer>
+<!----------------------END FOOTER----------------------->
+
+    <script src="https://kit.fontawesome.com/0eab0f8aa6.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
