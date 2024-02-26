@@ -764,15 +764,14 @@ html {
 }
 
 
-/* Path: css/plyr.css */
+/* styling plyr*/
 
 :root {
   --plyr-color-main: #2900D4;
   --plyr-control-icon-size: 15px;
   --plyr-control-radius: 20px;
-  --plyr-font-family: "LEMONMILK-Regular", arial, sans-serif;
+  --plyr-font-family: "lemon_milkregular", arial, sans-serif;
   --plyr-control-spacing: 15px;
   --plyr-control-hover-opacity: 0.8;
-
 
 }

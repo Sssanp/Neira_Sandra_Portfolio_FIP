@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Home | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -15,9 +19,9 @@
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     
 <!--script library-->
-
 <!--using defer and and modules for a better order, I keep trying to learn this concept better-->
     <script defer type="module" src="./js/main.js"></script>
+    <script defer type="module" src="./js/modules/gsap.js"></script>
 
 <!-- 3d element: not sure how this work but is just for the 3d element, i want it to upload it fast so i put it first, i think this 3d is provissional i wnat to later put something more cool-->
 
@@ -139,616 +143,80 @@
             <h2 class="hidden">Projects</h2>
 
 <!-------------------------- P1 ------------------------------->
+
         <div class="col-span-full m-col-start-2 m-col-end-9 l-col-start-2 l-col-end-9 xl-col-start-2 xl-col-end-9 box-left">
-        <h3 class="hidden">Project 1</h3>
-        <a class="thumb box" style="aspect-ratio: 4/3" href="#lightbox-1" previewlistener="true" onclick="openLightbox('lightbox-1')">
-            <video class="project-video" src="videos/haan.mp4" autoplay="" loop="" muted="" playsinline=""></video>
-            <div class="overlay cursor-scale small">
-                <div class="content text">
-                    <h2>Haan Earbuds</h2>
-                    <h3>An earbud website using GSAP animations</h3>
-                </div>
-            </div>
-        </a>
-       </div>
-
-<!---------------------------- Lightbox P1 ----------------------------->
-
-      
-<div id="lightbox-1" class="lightbox">
-    <span class="close-btn" onclick="closeLightbox('lightbox-1')" data-lightbox-id="lightbox-1">&times;</span>
-    <div class="lightbox-content">
-        <section class="grid-con">
-            <h2 class="hidden">Hero</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">Hero Text</h3>
-            <h2>Title</h2>
-            <h3>Subtitle</h3>
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">Hero paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
-            </div>
-        </section>
-
-        <!-------------------------- project ------------------------------->
-
-        <section class="grid-con">
-            <h2 class="hidden">main project image</h2>
-            <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-    
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">about project</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">peorject description</h3>
-                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
-    
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">about project</h3>
-                <h3>My Role</h3>
-                <p>Text</p>
-                <h3>Team</h3>
-                <p>Names</p>
-            </div>
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-            <h2 class="hidden">project text</h2>
-            <div class="col-start-1 col-end-5 m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 xl-col-start-4 xl-col-end-10 box-left">
-                <h3>Subtitle</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolores dicta iusto expedita? Reiciendis iste, harum quisquam aliquam sunt placeat amet necessitatibus quam? Ullam odit labore libero, excepturi incidunt nobis!</p>
-            </div>
-            
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">More about the porject</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
+            <h3 class="hidden">Project 1</h3>
+            <a class="thumb box" style="aspect-ratio: 4/3" href="projects.html" previewlistener="true">
+           <video class="project-video" src="videos/haan.mp4" autoplay loop muted playsinline></video> 
+          <div class="overlay cursor-scale small">
+        <div class="content text">
+            <h2>Haan Earbuds</h2>
+            <h3>An earbud website using GSAP animations</h3>
+        </div>
+    </div>
+            </a>
                 
             </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
-                <h3 class="hidden">paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
-            </div>
-
-        </section>
-
-
-
-        <section class="grid-con">
-            <h2 class="hidden">about project</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">peorject description</h3>
-                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
-    
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-center">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-        </section>
-
-        <!-------------------------- next project ------------------------------->
-
-  
-        <section class="grid-con">
-
-        <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-            <h3 class="hidden">Next Project text</h3>
-            <h3>Next Project</h3>
-            <h2>Project Name</h2>
-            <h3>Subtitle</h3>
-        </div>
-
-        <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-            <h3 class="hidden">about project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa autem maxime cupiditate eum molestias pariatur!</p>
-        </div>
-    </section>
-
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-    </section>
-    
-    </div>
-</div>
-
 <!-------------------------- P1 End ------------------------------->
     
 <!-------------------------- P2 ------------------------------->
     
             <div class="col-span-full m-col-start-9 m-col-end-12 l-col-start-9 l-col-end-12 xl-col-start-9 xl-col-end-12 box-left">
                 <h3 class="hidden">Project 2</h3>
-                <a class="thumb box" style="aspect-ratio: 4/3" href="#lightbox-2" previewlistener="true" onclick="openLightbox('lightbox-2')">
-                    <video class="project-video" src="videos/quatro.mp4" autoplay loop muted playsinline></video> 
-                    <div class="overlay cursor-scale small">
-                        <div class="content text">
-                            <h2>Quatro</h2>
-                            <h3>Re-branding &amp; video promotional</h3>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
- <!---------------------------- Lightbox P2 ----------------------------->
-<div id="lightbox-2" class="lightbox">
-    <span class="close-btn" onclick="closeLightbox('lightbox-2')" data-lightbox-id="lightbox-2">&times;</span>
-    <div class="lightbox-content">
-        <section class="grid-con">
-            <h2 class="hidden">Hero</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">Hero Text</h3>
-            <h2>Quatro-Re-branding</h2>
+            <a class="thumb box" style="aspect-ratio: 4/3" href="projects.html" previewlistener="true">
+           <video class="project-video" src="videos/quatro.mp4" autoplay loop muted playsinline></video> 
+          <div class="overlay cursor-scale small">
+        <div class="content text">
+            <h2>Quatro</h2>
             <h3>Re-branding &amp; video promotional</h3>
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">Hero paragraph</h3>
-                <p>Collaborative work on a rebranding for Quatro, soft drink brand. </p>
-            </div>
-        </section>
-
-       <section class="grid-con">
-            <h2 class="hidden">main project image</h2>
-            <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center">
-                <img class="project-img" src="images/quatro1.jpg" alt="project image">
-            </div>
-    
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">about project</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">project description</h3>
-                <p>For this collaborative project, a rebranding of the Quatro brand was carried out, this included design of the label, box packaging, website and finally a promotional video.</p>
-    
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">about project</h3>
-                <h3>My Role</h3>
-                <p>Designer</p>
-                <h3>Team</h3>
-                <p>Jesica Ohene <br> Sandra Neira</p>
-            </div>
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box-center">
-                <img class="project-img" src="images/hero-shop-desktop.png" alt="project image">
-            </div>
-
-            <h2 class="hidden">project text</h2>
-            <div class="col-start-1 col-end-5 m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 xl-col-start-4 xl-col-end-10 box-left">
-                <h3>Thoughts</h3>
-                <p>As a first step, we took the original design of the brand as a reference and thought about how we wanted to change, what we wanted to achieve with it and what feeling this brand wanted to convey.
-     <br>
-                Was decided to create four flavours of this soda (Quatro), using quite striking colours and an original design according to the flavours.</p>
-            </div>
-
-            <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center">
-            <video controls poster="images/quatrovideoplaceholder.png">
-                <source src="videos/QUATRO_FINAL_VIDEO.mp4" type="video/mp4">
-            </video>
         </div>
-        </section>
-
-
-        <section class="grid-con">
-            <h2 class="hidden">More about the porject</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">image</h3>
-                <p>For this project, Cinema 4D was used to create the can, Illustrator and Photoshop to design the label  box packaging, and the website headers, and After Effects to make the promotional video.</p>
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/quatropackage.jpg" alt="project image">
-            </div>
-
-            <h2 class="hidden">project text</h2>
-            <div class="col-start-1 col-end-5 m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 xl-col-start-4 xl-col-end-10 box-left">
-                <p>The final result is a fun, colorful and healthy brand and good layout website.</p>
-            </div>
-        </section>
-
-
-        <section class="grid-con">
-        <h2 class="hidden">project text</h2>
-            <div class="col-start-1 col-end-5 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box-left">
-                <h3>Outcome</h3>
-                <p>It was a really exciting and fun project for me, it involved a lot of research and detailed interaction work. Still, I learned some important takeaways from this project related to design and group work.</p>
-                <br>
-                <h3>How to adapt to changing requirements</h3>
-                <p>The different ideas, designs and concepts change. I had to adapt to those changes and still deliver the best possible design on time with tight deadlines.
-                </p>
-                <br>
-                <h3>Always strive for good UX</h3>
-                <p>Creating the wireframe for this project made me understand what is essential to have a good user experience.
-                </p>
-                <br>
-                <h3>Choose what we won&apos;t do</h3>
-                <p>There were many excellent ideas or visions that we were able to address with a wide set of functions for the website, animations here and there. However, each of them was unrealistic according to the time. We had to determine where the real value of the website and the brand was so as not to spread ourselves too thin.
-                </p>
-
-     </div>
-
-        </section>
-
-        <!-------------------------- next project ------------------------------->
-
-        <section class="grid-con">
-
-     <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-        <h3 class="hidden">Next Project text</h3>
-        <h3>Next Project</h3>
-        <h2>Project Name</h2>
-        <h3>Subtitle</h3>
-     </div>
-
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-         </section>
-    
     </div>
-</div>
-<!-------------------------- P2 End ------------------------------->
-
-<!-------------------------- P3------------------------------->
-   <div class="col-span-full m-col-start-2 m-col-end-5 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
-                <h3 class="hidden">Project 3</h3>
-            
-                <a class="thumb box" style="aspect-ratio: 4/3" href="#lightbox-3" previewlistener="true" onclick="openLightbox('lightbox-3')">
-                    <video class="project-video" src="videos/ceci.mp4" autoplay="" loop="" muted="" playsinline=""></video>
-                    <div class="overlay cursor-scale small">
-                        <div class="content text">
-                            <h2>Ceci Cosmetics</h2>
-                            <h3>Promotional video for Skincare brand</h3>
-                        </div>
-                    </div>
-                </a>
-               </div>
-
-<!---------------------------- Lightbox P3 ----------------------------->
-<div id="lightbox-3" class="lightbox" onclick="closeLightbox()">
-    <span class="close-btn" onclick="closeLightbox('lightbox-3')" data-lightbox-id="lightbox-3">&times;</span>
-    <div class="lightbox-content">
-        <section class="grid-con">
-            <h2 class="hidden">Hero</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">Hero Text</h3>
-            <h2>Title</h2>
-            <h3>Subtitle</h3>
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">Hero paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
-            </div>
-        </section>
-
-        <!-------------------------- project ------------------------------->
-
-        <section class="grid-con">
-            <h2 class="hidden">main project image</h2>
-            <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-    
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">about project</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">peorject description</h3>
-                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
-    
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">about project</h3>
-                <h3>My Role</h3>
-                <p>Text</p>
-                <h3>Team</h3>
-                <p>Names</p>
-            </div>
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-            <h2 class="hidden">project text</h2>
-            <div class="col-start-1 col-end-5 m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 xl-col-start-4 xl-col-end-10 box-left">
-                <h3>Subtitle</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolores dicta iusto expedita? Reiciendis iste, harum quisquam aliquam sunt placeat amet necessitatibus quam? Ullam odit labore libero, excepturi incidunt nobis!</p>
-            </div>
-            
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">More about the porject</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
+</a>
                 
             </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
-                <h3 class="hidden">paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
-            </div>
+<!-------------------------- P2 End ------------------------------->
 
-        </section>
-
-
-
-        <section class="grid-con">
-            <h2 class="hidden">about project</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">peorject description</h3>
-                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
-    
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-center">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-        </section>
-
-        <!-------------------------- next project ------------------------------->
-
-  
-        <section class="grid-con">
-
-        <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-            <h3 class="hidden">Next Project text</h3>
-            <h3>Next Project</h3>
-            <h2>Project Name</h2>
-            <h3>Subtitle</h3>
+<!--------------------------P3------------------------------->
+   <div class="col-span-full m-col-start-2 m-col-end-5 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
+    <h3 class="hidden">Project 3</h3>
+                <!-- Replace this -->
+            <a class="thumb box" style="aspect-ratio: 4/3" href="projects.html" previewlistener="true">
+           <video class="project-video" src="videos/ceci.mp4" autoplay loop muted playsinline></video> 
+          <div class="overlay cursor-scale small">
+        <div class="content text">
+            <h2>Ceci Cosmetics</h2>
+            <h3>Promotional video for Skincare brand</h3>
         </div>
-
-        <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-            <h3 class="hidden">about project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa autem maxime cupiditate eum molestias pariatur!</p>
-        </div>
-    </section>
-
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-    </section>
-    
     </div>
-</div>
-    
+</a>
+                
+            </div>
 
 <!-------------------------- P3 End ------------------------------->
+
 
 <!-------------------------- P4 ------------------------------->
 
                <div class="col-span-full m-col-start-5 m-col-end-12 l-col-start-5 l-col-end-12 xl-col-start-5 xl-col-end-12 box-left">
-                <h3 class="hidden">Project 4</h3>
-                <a class="thumb box" style="aspect-ratio: 4/3" href="#lightbox-4" previewlistener="true" onclick="openLightbox('lightbox-4')">
-                    <video class="project-video" src="videos/saninflated.mp4" autoplay="" loop="" muted="" playsinline=""></video>
-                    <div class="overlay cursor-scale small">
-                        <div class="content text">
-                            <h2>Coming Soon</h2>
-                            <h3></h3>
-                        </div>
-                    </div>
-                </a>
+                <h3 class="hidden">Project 3</h3>
+                <!-- Replace this -->
+            <a class="thumb box" style="aspect-ratio: 4/3" href="projects.html" previewlistener="true">
+           <video class="project-video" src="videos/saninflated.mp4" autoplay loop muted playsinline></video> 
+          <div class="overlay cursor-scale small">
+        <div class="content text">
+            <h2>Coming Soon</h2>
+            <h3></h3>
+        </div>
+        </div>
+      </a>
+                
             </div>
 
 
             </section>
-
-
-            <!---------------------------- Lightbox P4 ----------------------------->
-<div id="lightbox-4" class="lightbox" onclick="closeLightbox()">
-    <span class="close-btn" onclick="closeLightbox('lightbox-4')" data-lightbox-id="lightbox-4">&times;</span>
-    <div class="lightbox-content">
-        <section class="grid-con">
-            <h2 class="hidden">Hero</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">Hero Text</h3>
-            <h2>Title</h2>
-            <h3>Subtitle</h3>
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">Hero paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
-            </div>
-        </section>
-
-        <!-------------------------- project ------------------------------->
-
-        <section class="grid-con">
-            <h2 class="hidden">main project image</h2>
-            <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-    
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">about project</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">peorject description</h3>
-                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
-    
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-                <h3 class="hidden">about project</h3>
-                <h3>My Role</h3>
-                <p>Text</p>
-                <h3>Team</h3>
-                <p>Names</p>
-            </div>
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-            <h2 class="hidden">project text</h2>
-            <div class="col-start-1 col-end-5 m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-10 xl-col-start-4 xl-col-end-10 box-left">
-                <h3>Subtitle</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dolores dicta iusto expedita? Reiciendis iste, harum quisquam aliquam sunt placeat amet necessitatibus quam? Ullam odit labore libero, excepturi incidunt nobis!</p>
-            </div>
-            
-        </section>
-
-        <section class="grid-con">
-            <h2 class="hidden">More about the porject</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
-                
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right">
-                <h3 class="hidden">paragraph</h3>
-                <p>Sit amet cursus elit. Cras libero arcu, sollicitudin quis sodales nec, fringilla at justo. Praesent non nulla quis orci hendrerit gravida. Duis hendrerit sollicitudin massa, vehicula malesuada ligula finibus id. </p>
-            </div>
-
-        </section>
-
-
-
-        <section class="grid-con">
-            <h2 class="hidden">about project</h2>
-    
-            <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-                <h3 class="hidden">peorject description</h3>
-                <p>Etiam euismod venenatis nulla, vitae rhoncus augue vestibulum vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sed porttitor orci, eu convallis purus. Suspendisse faucibus bibendum rutrum. Proin eget vehicula mi, nec mattis ante. Nunc ut nisi sit amet nisi tincidunt luctus. </p>
-    
-            </div>
-    
-            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-center">
-                <h3 class="hidden">image</h3>
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-        </section>
-
-        <!-------------------------- next project ------------------------------->
-
-  
-        <section class="grid-con">
-
-        <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-left">
-            <h3 class="hidden">Next Project text</h3>
-            <h3>Next Project</h3>
-            <h2>Project Name</h2>
-            <h3>Subtitle</h3>
-        </div>
-
-        <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
-            <h3 class="hidden">about project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi culpa autem maxime cupiditate eum molestias pariatur!</p>
-        </div>
-    </section>
-
-
-        <section class="grid-con">
-            <h2 class="hidden">project image</h2>
-            <div class="col-start-1 col-end-5 m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 box-center">
-                <img class="project-img" src="images/project-img.jpg" alt="project image">
-            </div>
-
-    </section>
-    </div>
-</div>
-
-
-
  <!-------------------------- P4 End ------------------------------->
 
-
 <!-------------------------- end projects ------------------------------->
-
 
 
 <!----------------------FOOTER----------------------->
@@ -838,14 +306,12 @@
     <hr class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 spacer">
   
   
-  
   </footer>
   <!----------------------END FOOTER----------------------->
 
-
-  <script src="js/lightbox.js"></script>
+  
   <script src="js/main.js"></script>
-
+  
 
 </body>
 

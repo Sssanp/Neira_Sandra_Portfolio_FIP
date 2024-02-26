@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>About | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -17,7 +19,9 @@
 <!--script library-->
 
 <!--using defer and and modules for a better order, I keep trying to learn this concept better-->
-    <script defer type="module" src="./js/main.js"></script>
+<script defer type="module" src="./js/main.js"></script>
+<script defer src="./js/addcontact.js"></script>
+<script defer type="module" src="./js/modules/gsap.js"></script>
 
 <!-- 3d element: not sure how this work but is just for the 3d element, i want it to upload it fast so i put it first, i think this 3d is provissional i wnat to later put something more cool-->
 
@@ -109,9 +113,9 @@
         <h3 class="hidden">Hero Text</h3>
         <h2 class="hero-text cursor-scale"><span class="highlight"> Hi</span>,<br>I'm San, a<br>designer, based<br>in London.</h2>
     </div>
-    <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-left">
+    <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-center">
         <h3 class="hidden">Photo of me SOON</h3>
-        <img class="hero-img" src="images/hero-img.jpg" alt="Photo of me SOON">
+        <img class="me-img" src="images/provisianalme.jpg" alt="Photo of me">
     </div>
 
     
@@ -239,9 +243,6 @@
   </footer>
   <!----------------------END FOOTER----------------------->
 
-
-  <script src="js/lightbox.js"></script>
-  <script src="js/main.js"></script>
 
 
 </body>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -18,6 +20,8 @@
 
 <!--using defer and and modules for a better order, I keep trying to learn this concept better-->
     <script defer type="module" src="./js/main.js"></script>
+    <script defer src="./js/addcontact.js"></script>
+    <script defer type="module" src="./js/modules/gsap.js"></script>
 
 <!-- 3d element: not sure how this work but is just for the 3d element, i want it to upload it fast so i put it first, i think this 3d is provissional i wnat to later put something more cool-->
 
@@ -44,7 +48,7 @@
 
 <!-------------------------- Body Start ------------------------------->
 
-<body id="home-page-bg">
+<body data-page="home" id="home-page-bg">
     <div class="cursor"></div>
     <h1 class="hidden">HOME PAGE</h1>
 
@@ -117,7 +121,7 @@
 
 <!-------------------------- contact form ------------------------------->
 
-<section class="grid-con">
+<section data-page="contact" class="grid-con">
 
     <div class="col-span-full m-col-start-2 m-col-end-7 l-col-start-2 l-col-end-7 xl-col-start-2 xl-col-end-7 box-center">
         <h3 class="hidden">Hero Image</h3>
@@ -126,118 +130,127 @@
 
     <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 contact-form box-left">    
         <h3 class="hidden">Contact Form</h3>
-        <form action="contact.php" method="post">
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name" id="first_name" placeholder="Your name" required>
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" id="last_name" placeholder="Your Last Name" required>
+        <form id="contactForm">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Your name" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Your Last Name" required>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Your email" required>
             <label for="City">City</label>
             <input type="text" name="city" id="city" placeholder="Your location" required>
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
-            <input type="submit" value="Send">
+            <input id="submit" type="submit" value="Send">
+
+            <div class="col-span-full m-col-start-7 m-col-end-12 l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 contact-form box-center">
+                <section id="feedback"><p>*Please fill out all required sections</p></section>
+            </div>
+        
         </form>
+
+        
     </div>
 
+    
 </section>
 
-  <!----------------------FOOTER----------------------->
-
-  <footer class="grid-con spacer">
-    <h2 class="hidden">Footer</h2>
-  
-    <div class="col-start-1 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-center">
-      <h3 class="hidden">Logo</h3>
-      <a href="index.html"><img class="logo" src="images/3dicon.png" alt="San Logo"></a>
-  </div>
-  
-    <nav class="mobile col-span-2 box-left footer-nav">
-        <h3 class="hidden">Footer Nav</h3>
-        <p class="footer-heading">Site</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-  
-    <nav class="tablet m-col-start-6 m-col-end-7 box-left footer-nav">
-        <h3 class="hidden">Footer Nav</h3>
-        <p class="footer-heading">Site</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-  
-    <nav class="desktop l-col-start-7 l-col-end-8 xl-col-start-7 xl-col-start-8 box-left footer-nav">
-        <h3 class="hidden">Footer Nav</h3>
-        <p class="footer-heading">Site</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-  
-    <div class="mobile col-span-2 box-center socials">
-        <p class="footer-heading">Socials</p>
-        <ul>
-            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
-        </ul>
-    </div>
-  
-    <div class="tablet m-col-start-9 m-col-end-12 box-left socials">
-        <p class="footer-heading">Socials</p>
-        <ul>
-            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
-        </ul>
-    </div>
-  
-    <div class="desktop l-col-start-10 l-col-end-12 xl-col-start-10 xl-col-end-12 box-left socials">
-        <p class="footer-heading">Socials</p>
-        <ul>
-            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
-        </ul>
-    </div>
-
-    <!--copyright-->
-
-    <div class="mobile cr col-span-full box-center">
-        <p>All content copyright Sandra Neira 2023 &copy;</p>
-    </div>
-
-    <div class="tablet cr m-col-span-full box-center">
-        <p>All content Sandra Neira 2023 &copy;</p>
-    </div>
-
-    <div class="desktop cr l-col-span-full xl-col-span-full box-center">
-        <p>All content Sandra Neira 2023 &copy;</p>
-    </div>
-  
-    <hr class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12">
-  
-  
-  
-  </footer>
-  <!----------------------END FOOTER----------------------->
 
 
-  <script src="js/lightbox.js"></script>
-  <script src="js/main.js"></script>
+    <!----------------------FOOTER----------------------->
 
+    <footer class="grid-con spacer">
+        <h2 class="hidden">Footer</h2>
+
+        <div
+            class="col-start-1 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
+            <h3 class="hidden">Logo</h3>
+            <a href="index.html"><img class="logo" src="images/3dicon.png" alt="San Logo"></a>
+        </div>
+
+        <nav class="mobile col-span-2 box-left footer-nav">
+            <h3 class="hidden">Footer Nav</h3>
+            <p class="footer-heading">Site</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="tablet m-col-start-6 m-col-end-7 box-left footer-nav">
+            <h3 class="hidden">Footer Nav</h3>
+            <p class="footer-heading">Site</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="desktop l-col-start-7 l-col-end-8 xl-col-start-7 xl-col-start-8 box-left footer-nav">
+            <h3 class="hidden">Footer Nav</h3>
+            <p class="footer-heading">Site</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile col-span-2 box-center socials">
+            <p class="footer-heading">Socials</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sandra-paola-neira-92132a274/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/ssancreate/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@sann_0/featured"><i class="fa-brands fa-square-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tablet m-col-start-9 m-col-end-12 box-left socials">
+            <p class="footer-heading">Socials</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sandra-paola-neira-92132a274/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/ssancreate/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@sann_0/featured"><i class="fa-brands fa-square-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="desktop l-col-start-10 l-col-end-12 xl-col-start-10 xl-col-end-12 box-left socials">
+            <p class="footer-heading">Socials</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sandra-paola-neira-92132a274/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/ssancreate/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@sann_0/featured"><i class="fa-brands fa-square-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <!--copyright-->
+
+        <div class="mobile cr col-span-full box-center">
+            <p>All content copyright Sandra Neira 2024 &copy;</p>
+        </div>
+
+        <div class="tablet cr m-col-span-full box-center">
+            <p>All content Sandra Neira 2024 &copy;</p>
+        </div>
+
+        <div class="desktop cr l-col-span-full xl-col-span-full box-center">
+            <p>All content Sandra Neira 2024 &copy;</p>
+        </div>
+
+        <hr
+            class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 spacer">
+    </footer>
+    <!----------------------END FOOTER----------------------->
 
 </body>
 
